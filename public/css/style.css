@@ -1,0 +1,443 @@
+body{
+   font-family: "Plus Jakarta Sans" , sans-serif !important;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height : 5rem;
+    background-color: white;
+}
+
+.fa-plane {
+    color : #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color : #222222 !important;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color : #222222 !important;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color : #222222 !important;
+}
+
+.f-info-links ,.f-info-socials,.f-info-brand  {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.f-info-socials i {
+     font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info{
+      height: 8rem;
+     display: flex;
+    text-align: center;
+     background-color: #ebebeb;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: space-evenly;
+}
+
+/* cards styling */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+
+.listing-links{
+    text-decoration: none;
+}
+
+
+
+/* Cards Effect */
+ 
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* show image */
+
+.show-img{
+    width: 100%;
+    height: auto;
+    max-height: 32rem;
+    object-fit: contain !important;
+    background-color: #f8f8f8;
+}
+
+.edit-preview-img {
+    width: 100%;
+    max-width: 340px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btns .btn,
+.btns form {
+    flex: 1;             /* both take equal space */
+}
+
+.btns button {
+    width: 100%;
+}
+
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+.edit-btn{
+       background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.index-hero {
+    margin: 1.5rem 0 2rem;
+    padding: 2.25rem;
+    border-radius: 1.75rem;
+    background:
+        radial-gradient(circle at top left, rgba(254, 66, 77, 0.16), transparent 30%),
+        linear-gradient(135deg, #fff4f4 0%, #ffffff 52%, #f7f7f7 100%);
+    border: 1px solid rgba(254, 66, 77, 0.12);
+    box-shadow: 0 18px 40px rgba(34, 34, 34, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.index-hero-copy {
+    max-width: 42rem;
+}
+
+.index-kicker {
+    display: inline-block;
+    margin-bottom: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    background-color: rgba(254, 66, 77, 0.1);
+    color: #d63642;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.index-hero h1 {
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    line-height: 1.05;
+    margin-bottom: 0.85rem;
+    color: #1f1f1f;
+}
+
+.index-hero p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555555;
+}
+
+.index-hero-stat {
+    min-width: 13rem;
+    padding: 1.2rem 1.35rem;
+    border-radius: 1.35rem;
+    background-color: #ffffff;
+    box-shadow: 0 14px 30px rgba(34, 34, 34, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.index-hero-stat strong {
+    font-size: 2rem;
+    line-height: 1;
+    color: #fe424d;
+}
+
+.index-hero-stat span {
+    margin-top: 0.4rem;
+    color: #666666;
+    font-weight: 500;
+}
+
+.index-listings-section {
+    margin-bottom: 2.5rem;
+}
+
+.index-section-head {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.index-section-head h2 {
+    color: #1f1f1f;
+}
+
+.index-section-head p {
+    color: #666666;
+}
+
+.index-count-pill {
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    background-color: #fff1f2;
+    color: #d63642;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.listing-card-modern {
+    overflow: hidden;
+    border: 1px solid rgba(34, 34, 34, 0.06) !important;
+    border-radius: 1.4rem !important;
+    background-color: #ffffff;
+    box-shadow: 0 16px 34px rgba(34, 34, 34, 0.07);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.listing-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 42px rgba(34, 34, 34, 0.12);
+}
+
+.listing-image-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.listing-index-img {
+    height: 18.5rem;
+    transition: transform 0.35s ease;
+}
+
+.listing-card-modern:hover .listing-index-img {
+    transform: scale(1.05);
+}
+
+.listing-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(34, 34, 34, 0.15) 100%);
+    pointer-events: none;
+}
+
+.listing-card-body {
+    padding: 1.15rem !important;
+}
+
+.listing-card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+.listing-card-title {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    color: #1f1f1f;
+}
+
+.listing-price-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    background-color: #fe424d;
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.listing-location {
+    margin: 0.9rem 0 0.35rem;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.listing-rate {
+    margin: 0;
+    color: #222222;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.review-form {
+    padding: 1.4rem;
+    border: 1px solid rgba(254, 66, 77, 0.12);
+    border-radius: 1.25rem;
+    background: linear-gradient(180deg, #fffdfd 0%, #fff6f6 100%);
+    box-shadow: 0 12px 30px rgba(34, 34, 34, 0.06);
+}
+
+.review-form .form-label {
+    font-weight: 600;
+    color: #222222;
+}
+
+.review-form .form-control {
+    border-radius: 0.9rem;
+    border: 1px solid rgba(34, 34, 34, 0.12);
+}
+
+.review-form textarea.form-control {
+    padding: 0.9rem 1rem;
+    resize: none;
+}
+
+.review-form .btn {
+    border-radius: 999px;
+    padding-inline: 1.25rem;
+}
+
+.review-grid {
+    margin-top: 1rem;
+}
+
+.review-card {
+    border: 1px solid rgba(254, 66, 77, 0.12);
+    border-radius: 1.25rem;
+    background: linear-gradient(180deg, #fff8f8 0%, #ffffff 100%);
+    box-shadow: 0 14px 32px rgba(34, 34, 34, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(34, 34, 34, 0.12);
+}
+
+.review-card-body {
+    padding: 1.2rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.review-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.review-date {
+    font-size: 0.82rem;
+    color: #6c757d;
+}
+
+.review-rating-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4.25rem;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    background-color: #fe424d;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 10px 20px rgba(254, 66, 77, 0.22);
+}
+
+.review-comment {
+    margin-bottom: 0 !important;
+    color: #444444;
+    line-height: 1.65;
+    font-size: 0.96rem;
+}
+
+.review-empty {
+    padding: 2rem;
+    border: 1px dashed rgba(254, 66, 77, 0.28);
+    border-radius: 1.25rem;
+    text-align: center;
+    background-color: #fffafa;
+    color: #6c757d;
+}
+
+.review-empty h5 {
+    color: #222222;
+    margin-bottom: 0.45rem;
+}
+
+@media (max-width: 768px) {
+    .index-hero {
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .index-section-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .index-hero-stat {
+        min-width: auto;
+        width: 100%;
+    }
+}
